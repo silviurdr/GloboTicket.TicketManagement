@@ -4,7 +4,7 @@ using System.Text;
 
 namespace GloboTicket.TicketManagement.Application.Events
 {
-    class EventDetailVm
+    public class EventDetailVm
     {
         public Guid EventId { get; set; }
         public string Name { get; set; }

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace GloboTicket.TicketManagement.Application.Events
 {
-    class GetEventDetailQuery: IRequest<EventDetailVm>
+    public class GetEventDetailQuery: IRequest<EventDetailVm>
     {
         public Guid Id { get; set; }
     }

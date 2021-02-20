@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using GloboTicket.TicketManagement.Application.Contracts.Persistence;
 using GloboTicket.TicketManagement.Domain.Entities;
+using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace GloboTicket.TicketManagement.Application.Features.Categories.Queries.GetCategoriesList
 {
-    class GetCategoriesListQueryHandler
+    class GetCategoriesListQueryHandler: IRequestHandler<GetCategoriesListQuery, List<CategoryListVm>>
     {
         private readonly IMapper _mapper;
         private readonly IAsyncRepository<Category> _categoryRepository;
