@@ -14,7 +14,7 @@ using System.Text;
 
 namespace GloboTicket.TicketManagement.Application.Profiles
 {
-    class MappingProfile: Profile
+    public class MappingProfile: Profile
     {
         public MappingProfile()
         {

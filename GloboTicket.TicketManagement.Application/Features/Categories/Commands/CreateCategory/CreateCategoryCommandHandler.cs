@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace GloboTicket.TicketManagement.Application.Features.Categories.Commands
 {
-    class CreateCategoryCommandHandler: IRequestHandler<CreateCategoryCommand, CreateCategoryCommandResponse>
+    public class CreateCategoryCommandHandler: IRequestHandler<CreateCategoryCommand, CreateCategoryCommandResponse>
     {
         private readonly IMapper _mapper;
         private readonly IAsyncRepository<Category> _categoryRepository;
